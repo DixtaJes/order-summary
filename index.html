@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  body {
+    background-color: hsl(225, 100%, 94%);
+    width: 300px;
+    height: 100vh;
+    margin: auto;
+    padding: 50px;
+    font-family: 'Outfit', sans-serif;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+  .image {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 25px;
+    width: 250px;
+    height: 440px;
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+    }
+  .order {
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+  }
+  .listen {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color:hsl(224, 23%, 55%);
+}
+.annual {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+  .plan {
+    display: flex;
+    border: 0px solid hsl(224, 23%, 55%);
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    }
+  .nine {
+    font-weight: 500;
+  }
+.music,.annual {
+  display: flex;
+  }
+.change {
+  padding-top: 35px;
+  padding-right: 10px;
+  font-weight: 600;
+}
+.proceed {
+  text-align: center;
+  border: 1px solid blue;
+  background-color: hsl(245, 75%, 52%);
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 2px 15px #f0f8ff;
+}
+.cancel {
+  text-align: center;
+  font-weight: 900;
+  color:hsl(224, 23%, 55%);
+  font-size: 12px;
+}
+  .order {
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 140px;
+  }
+  .plan {
+    display: flex;
+    border: 0px solid hsl(224, 23%, 55%);
+    border-radius: 10px;
+    background-color: rgba(106, 90, 205, 5%);
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 5px;
+    }
+  .annual {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+  .nine {
+    font-weight: 200;
+  }
+.music,.annual {
+  display: flex;
+  }
+.change {
+  padding-top: 35px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.listen {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color:hsl(224, 23%, 55%);
+}
+.proceed {
+  text-align: center;
+  border: 1px solid blue;
+  background-color: hsl(245, 75%, 52%);
+  padding: 5px;
+  border-radius: 7px;
+  color: white;
+  box-shadow: 3px 12px rgba(128, 0, 128, 5%);
+  font-size: 12px;
+}
+.cancel {
+  text-align: center;
+  font-weight: 900;
+  color:hsl(224, 23%, 55%);
+  font-size: 14px;
+  padding: 5px
+}
+
+  </style>
+</head>
+<body>
+  <div class="image">
+    <p class="order">
+  Order Summary
+</p>
+<p class="listen">
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+</p>
+<div class="plan">
+  <p class="music"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#DFE6FB"/><path fill="#717FA6" fill-rule="nonzero" d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"/></g></svg>
+    </p>
+    <p class="annual">
+  Annual Plan
+  <span class="nine">$59.99/year</span>
+</p>
+<a href="#" class="change">Change</a>
+  </div>
+
+<p class="proceed">Proceed to Payment</p>
+<p class="cancel">
+  Cancel Order</p>
+  </div>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+</body>
+</html>
